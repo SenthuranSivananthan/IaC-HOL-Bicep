@@ -1,7 +1,7 @@
 ## Deploy Bicep template
 
 ```bash
-az group create --name hol --location canadacentral
+az group create --name hol --location eastus
 
 az deployment group create --resource-group hol --template-file Lab-02/Solutions/Exercise2.bicep
 ```

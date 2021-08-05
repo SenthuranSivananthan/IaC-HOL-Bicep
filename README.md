@@ -14,3 +14,4 @@ Hands on labs to help teach infrastructure as code using Bicep
 * Lab 3 - Resource Deployment & Modules
 * Lab 4 - Dependencies
 * Lab 5 - Deployment Scopes
+* Lab 6 - Python + PostgreSQL Application

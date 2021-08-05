@@ -1,4 +1,4 @@
-# Hands On Lab #1:  Bicep Fundamentals
+# Hands On Lab #2:  Bicep Fundamentals
 
 ## Success Criteria
 

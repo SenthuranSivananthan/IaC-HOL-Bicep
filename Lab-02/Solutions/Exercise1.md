@@ -1,4 +1,3 @@
-
 ## Deploy Bicep template
 
 ```bash

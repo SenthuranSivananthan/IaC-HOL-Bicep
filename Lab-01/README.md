@@ -2,14 +2,15 @@
 
 ## Success Criteria
 
-1. Setup Visual Studio Code
-2. Setup Azure CLI
-3. Setup Azure Cloud Shell
+1. Installed Visual Studio Code
+2. Installed Azure CLI
+3. Configured Azure Cloud Shell
+4. Watched Brendan Burns' Ignite 2021 Presentation on Bicep
 
 
 ## Installation
 
-1. Install [Visual Studio Code](https://code.visualstudio.com/Download).
+1. Install [Visual Studio Code](https://code.visualstudio.com/Download)
 2. Install [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli)
 
 ## Setup Azure Cloud Shell
@@ -26,3 +27,14 @@ When WSL is used, consider installing:
 
 * Azure CLI on Ubuntu
 * [Integrate Visual Studio Code with WSL](https://code.visualstudio.com/docs/remote/wsl)
+
+## Introduction to Bicep
+
+Bicep is a domain-specific language (DSL) that uses declarative syntax to deploy Azure resources. It provides concise syntax, reliable type safety, and support for code reuse. We believe Bicep offers the best authoring experience for your infrastructure-as-code solutions in Azure.
+
+You can use Bicep instead of JSON to develop your Azure Resource Manager templates (ARM templates). The JSON syntax to create an ARM template can be verbose and require complicated expressions. Bicep syntax reduces that complexity and improves the development experience. Bicep is a transparent abstraction over ARM template JSON and doesn't lose any of the JSON template capabilities. During deployment, the Bicep CLI converts a Bicep file into ARM template JSON.
+
+Bicep isn't intended as a general programming language to write applications. A Bicep file declares Azure resources and resource properties, without writing a sequence of programming commands to create resources.
+
+* Watch [Brendan Burns' Ignite 2021 Presentation](https://www.youtube.com/embed/sc1kJfcRQgY) (30 minutes)
+* Browse [Azure Docs](https://docs.microsoft.com/azure/azure-resource-manager/bicep/overview)

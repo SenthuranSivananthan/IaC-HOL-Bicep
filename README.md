@@ -1,6 +1,12 @@
 # Infrastructure as Code using Bicep
 Hands on labs to help teach infrastructure as code using Bicep
 
+## Training
+
+* [Learning Path - Deploy and manage resources in Azure by using Bicep](https://docs.microsoft.com/en-us/learn/paths/bicep-deploy/) (4.5 hours)
+* [Bicep Tutorial](https://github.com/Azure/bicep/blob/main/docs/tutorial)
+* [Bicep Engineering docs](https://github.com/Azure/bicep/tree/main/docs)
+
 ## Labs
 
 * Lab 1 - Tooling

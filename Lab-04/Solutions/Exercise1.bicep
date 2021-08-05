@@ -11,7 +11,7 @@ resource appServicePlan 'Microsoft.Web/serverfarms@2020-06-01' = {
   }
 }
 
-resource appServce 'Microsoft.Web/sites@2020-06-01' = {
+resource appService 'Microsoft.Web/sites@2020-06-01' = {
   name: 'appservice${uniqueString(resourceGroup().id)}'
   location: resourceGroup().location
   kind: 'linux'

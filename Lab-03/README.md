@@ -27,6 +27,8 @@ Ensure you can answer:
 
 ## Exercise #3
 
+Bicep enables you to break down a complex solution into modules. A Bicep module is a set of one or more resources to be deployed together. Modules abstract away complex details of the raw resource declaration, which can increase readability. You can reuse these modules, and share them with other people. Bicep modules are transpiled into a single ARM template with nested templates for deployment.
+
 Create the storage account as a Bicep `module` so that it can be reused in different scenarios.
 
 Ensure you can answer:

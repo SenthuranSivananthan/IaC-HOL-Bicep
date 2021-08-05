@@ -1,5 +1,5 @@
 # Infrastructure as Code using Bicep
-Hands on labs to help teach infrastructure as code using Bicep
+Hands on labs for learning infrastructure as code using Bicep
 
 ## Training
 

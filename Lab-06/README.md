@@ -12,7 +12,7 @@ In this lab, you will be deploying an Azure App Service (with Python) & PostgreS
 
 ## Exercise #1
 
-You will be deploying the entire environment through Bicep template.  This example is based on [Django web app with PostgreSQL in Azure App Service)[https://docs.microsoft.com/azure/app-service/tutorial-python-postgresql-app] tutorial.  Instead of manual deployment, you will use Bicep to:
+You will be deploying the entire environment through Bicep template.  This example is based on [Django web app with PostgreSQL in Azure App Service](https://docs.microsoft.com/azure/app-service/tutorial-python-postgresql-app) tutorial.  Instead of manual deployment, you will use Bicep to:
 
 * Deploy Azure Database for PostgreSQL Single Instance (Note:  you may not be able to deploy in `Canada Central` region.  Try `East US` if not possible)
 * Deploy Azure App Service based on [Lab 05](../Lab-05)

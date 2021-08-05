@@ -1,6 +1,6 @@
 ## Deploy Bicep template
 
-Follow the instruction for [Exercise #1](Excerise1.md) to deploy the Azure App Service.
+Follow the instruction for [Exercise #1](Exercise1.md) to deploy the Azure App Service.
 
 ## Deploy Python Application
 

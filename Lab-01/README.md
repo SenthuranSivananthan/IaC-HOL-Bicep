@@ -2,7 +2,7 @@
 
 ## Success Criteria
 
-1. Installed Visual Studio Code
+1. Installed Visual Studio Code + Bicep extension
 2. Installed Azure CLI
 3. Configured Azure Cloud Shell
 4. Watched Brendan Burns' Ignite 2021 Presentation on Bicep
@@ -11,7 +11,8 @@
 ## Installation
 
 1. Install [Visual Studio Code](https://code.visualstudio.com/Download)
-2. Install [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli)
+2. Install [Bicep VS Code extension](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep)
+3. Install [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli)
 
 ## Setup Azure Cloud Shell
 

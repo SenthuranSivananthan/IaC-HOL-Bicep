@@ -7,7 +7,6 @@
 3. Configured Azure Cloud Shell
 4. Watched Brendan Burns' Ignite 2021 Presentation on Bicep
 
-
 ## Installation
 
 1. Install [Visual Studio Code](https://code.visualstudio.com/Download)

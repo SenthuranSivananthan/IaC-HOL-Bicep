@@ -5,11 +5,10 @@
 1. Create Bicep templates to deploy Azure Resources where one resource depends on another during deployment time.
 2. Able to answer:
 
-    * Are dependencies implict or explict or both?
+    * Are dependencies implicit or explicit or both?
     * How does Azure Resource Manager handle dependencies?
     * What is the deployment order that Azure Resource Manager uses?
     * How does Bicep simply declaring dependencies?
-
 
 ## Exercise #1
 

@@ -8,7 +8,7 @@ It is important to set the target scope because it allows Bicep to perform valid
 
 ## Documentation
 
-* [Bicep - Resource Scopes](https://github.com/Azure/bicep/blob/main/docs/spec/resource-scopes.md)
+* [Bicep - Resource Scopes](https://docs.microsoft.com/azure/azure-resource-manager/bicep/bicep-functions-scope)
 
 ## Success Criteria
 

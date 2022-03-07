@@ -30,7 +30,7 @@ Create a Bicep template to output metadata about your environment.  The metadata
 This template will use Azure Resource Manager (ARM) to query your Azure subscription and output the following information:
 
 1. Azure AD Tenant Id
-2. Subscriptoin Id
+2. Subscription Id
 3. Resource Group Id
 4. Resource Group Name
 5. Resource Group Location

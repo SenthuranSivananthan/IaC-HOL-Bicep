@@ -3,9 +3,11 @@ param appServicePlanId string
 
 param appSettings array
 
+param location string = resourceGroup().location
+
 resource appService 'Microsoft.Web/sites@2020-06-01' = {
   name: name
-  location: resourceGroup().location
+  location: location
   kind: 'linux'
   identity: {
     type: 'SystemAssigned' // this is new from other labs

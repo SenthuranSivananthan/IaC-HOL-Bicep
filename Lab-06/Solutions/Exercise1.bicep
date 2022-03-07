@@ -6,11 +6,13 @@ param dbUsername string
 @secure()
 param dbPassword string
 
+param location string = deployment().location
+
 var appDatabaseName = 'pollsdb'
 
 resource resourceGroup 'Microsoft.Resources/resourceGroups@2021-04-01' = {
   name: 'hol'
-  location: deployment().location
+  location: location
 }
 
 module pollsKeyVault 'modules/key-vault.bicep' = {
@@ -18,6 +20,7 @@ module pollsKeyVault 'modules/key-vault.bicep' = {
   name: 'deploy-key-vault'
   params: {
     name: 'polls${uniqueString(resourceGroup.id)}'
+    location: location
   }
 }
 
@@ -26,6 +29,7 @@ module pollsPostgreSQL 'modules/postgresql.bicep' = {
   name: 'deploy-postgresql-server'
   params: {
     name: 'polls${uniqueString(resourceGroup.id)}'
+    location: location
 
     username: dbUsername
     password: dbPassword
@@ -39,6 +43,7 @@ module pollsAppServicePlan 'modules/app-service-plan.bicep' = {
   name: 'deploy-app-service-plan'
   params: {
     name: 'polls-service-plan'
+    location: location
   }
 }
 
@@ -46,6 +51,7 @@ module pollsAppService 'modules/app-service.bicep' = {
   scope: resourceGroup
   name: 'deploy-app-service'
   params: {
+    location: location
     appServicePlanId: pollsAppServicePlan.outputs.appServicePlanId
     name: 'polls${uniqueString(resourceGroup.id)}'
     appSettings: [

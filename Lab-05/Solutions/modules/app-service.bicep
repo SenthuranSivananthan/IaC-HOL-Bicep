@@ -1,9 +1,10 @@
 param name string
 param appServicePlanId string
+param location string = resourceGroup().location
 
 resource appService 'Microsoft.Web/sites@2020-06-01' = {
   name: name
-  location: resourceGroup().location
+  location: location
   kind: 'linux'
   properties: {
     httpsOnly: true

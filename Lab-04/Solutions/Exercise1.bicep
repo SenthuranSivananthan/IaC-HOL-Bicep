@@ -1,6 +1,8 @@
+param location string = resourceGroup().location
+
 resource appServicePlan 'Microsoft.Web/serverfarms@2020-06-01' = {
   name: 'app-service-plan'
-  location: resourceGroup().location
+  location: location
   kind: 'Linux'
   sku: {
     name: 'S1'
@@ -13,7 +15,7 @@ resource appServicePlan 'Microsoft.Web/serverfarms@2020-06-01' = {
 
 resource appService 'Microsoft.Web/sites@2020-06-01' = {
   name: 'appservice${uniqueString(resourceGroup().id)}'
-  location: resourceGroup().location
+  location: location
   kind: 'linux'
   properties: {
     httpsOnly: true

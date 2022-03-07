@@ -1,8 +1,9 @@
 param name string
+param location string = resourceGroup().location
 
 resource akv 'Microsoft.KeyVault/vaults@2021-04-01-preview' = {
   name: name
-  location: resourceGroup().location
+  location: location
   properties: {
     sku: {
       family: 'A'

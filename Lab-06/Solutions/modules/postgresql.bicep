@@ -1,4 +1,5 @@
 param name string
+param location string = resourceGroup().location
 
 @secure()
 param username string
@@ -9,7 +10,7 @@ param password string
 param databaseName string
 
 resource postgresqlserver 'Microsoft.DBforPostgreSQL/servers@2017-12-01' = {
-  location: resourceGroup().location
+  location: location
   name: name
   sku: {
     name: 'GP_Gen5_4'
